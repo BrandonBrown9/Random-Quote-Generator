@@ -1,0 +1,75 @@
+/* Global Layout */
+body {
+    background-color: #abc4b9 ;
+}
+/* Div Profile - template theme */
+
+.Profile {
+    text-align: right;
+    font-family: "papyrus";
+    color: #631205;
+}
+
+.Profile h2 {
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.Profile h3 {
+    margin: 5px;
+    margin-bottom: 50px;
+}
+
+img {
+    border-radius: 50%;
+    height: 150px;
+    border: solid;
+    border-color: #631205;
+}
+
+.Instructions h3{
+    text-align: center;
+    font-family: "papyrus";
+    color: #631205;
+    
+}
+
+#html {
+    text-align: center;
+    font-family: "papyrus";
+    color: #631205;
+}
+
+/* Quote Field - Styles where JavaScript will put the quotes*/
+.Container-Card {
+    margin: 80px;
+    margin-bottom: 20px;
+    max-width: 1650px;
+    min-width: 50px;
+    padding: 20px 20px 20px;
+    text-align: center;
+    background: #cce0d8;
+    border-radius: 6px;
+    border: solid;
+    border-color: #631205;
+}
+
+.Container-Card h3 {
+    font-family: "papyrus";
+    color: #631205;
+}
+
+button {    
+    font-family: "papyrus";
+    font-size: 15px;
+    color: #631205;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #cce0d8;
+    border-color: #631205;
+    border-radius: 6px;
+    border: solid;
+    margin-left: 80px;
+}
