@@ -24,10 +24,10 @@ const quotes = [
         year: ''
     },
     {
-        quote: "Do it, just do it. Don't let your dreams be dreams.",
+        quote: "Do it, just do it! Don't let your dreams be dreams.",
         source: "Shia LaBeouf",
         citation: "Google",
-        year: ''
+        year: '2015'
     },
     {
         quote: "Make your life a masterpiece; imagine no limitations on what you can be, have or do",
@@ -45,37 +45,38 @@ and use that random number to return a random quote object from the quotes array
 */
     function getRandomQuote() {
         let random = Math.floor(Math.random() * (quotes.length));
-        return quotes[random];
-        //console.log(quotes[random]);
-        // document.getElementById('html').innerHTML = quotes[random]; 
+        return quotes[random]; // Return command crucial for sending the random quote back to a variable in the printQuote method
+        //console.log(quotes[random]); // QA - Successful
+        // document.getElementById('html').innerHTML = quotes[random]; // QA - Successful
     }
 
     // getRandomQuote();
     // console.log(getRandomQuote());
 
 // Create a printQuote Function
-// BRANDON -- PICK UP HERE 8/28
 
 function printQuote() {
-    let result = getRandomQuote();
+    let result = getRandomQuote(); // Result equals the returned method of quotes[random] in getRandomQuote() method.
     
     let randomQuote = `
         <p class = "quote">${result.quote}</p> 
-        <p class = "source">${result.source}
+        <p class = "source">- ${result.source}
     `
 
-    if(result.citation || result.year) {
-        randomQuote = `
-        <span class = "citation">${result.citation}</span>
-        <span class = "year">${result.year}</span>
-        </p>
+    if(result.year) {
+        randomQuote += `
+        <span class = "year">- ${result.year}</span> 
     `
+    } else if (result.citation) {
+        randomQuote += `
+        <span class = "citation">-  ${result.citation}</span>
+        `
     }
 
-    document.getElementById('html').innerHTML = randomQuote;
-    console.log(randomQuote);
+    randomQuote += `</p>`; // Close the paragraph tag and append to the end of the randomQuote variable
+
+    return document.getElementById('html').innerHTML = randomQuote; 
 
 }
-
-// printQuote();
+// console.log(printQuote()); QA - Successful - Logs randomQuote string and template literal to console.
 
