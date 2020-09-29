@@ -46,6 +46,7 @@ and use that random number to return a random quote object from the quotes array
     function getRandomQuote() {
         let random = Math.floor(Math.random() * (quotes.length));
         return quotes[random]; // Return command crucial for sending the random quote back to a variable in the printQuote method
+        
         //console.log(quotes[random]); // QA - Successful
         // document.getElementById('html').innerHTML = quotes[random]; // QA - Successful
     }
