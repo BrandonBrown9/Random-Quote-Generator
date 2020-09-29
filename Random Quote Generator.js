@@ -50,10 +50,6 @@ and use that random number to return a random quote object from the quotes array
         // document.getElementById('html').innerHTML = quotes[random]; // QA - Successful
     }
 
-    // getRandomQuote();
-    // console.log(getRandomQuote());
-
-// Create a printQuote Function
 
 function printQuote() {
     let result = getRandomQuote(); // Result equals the returned method of quotes[random] in getRandomQuote() method.
